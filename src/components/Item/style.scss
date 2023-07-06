@@ -1,0 +1,19 @@
+#item-container {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    max-width: 380px;
+    height: 380px;
+    max-height: 380px;
+    background: linear-gradient(180deg,#ff6060 0%, #dd6767 50%,#803030 100%);
+    border-radius: 25px;
+    h2 {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.67px;
+        color: rgba(255, 255, 255,0.9);
+        padding: 20px;
+        width: 160px;
+    }
+}

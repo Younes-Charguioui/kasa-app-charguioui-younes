@@ -1,0 +1,32 @@
+$kasa_red: rgba(255, 96, 96, 1);
+
+@mixin kasaFont() {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    padding: 25px 0px;
+    max-width: 1440px;
+    margin: 0px auto;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        gap: 60px;
+        width: 100%;
+        align-items: center;
+        li {
+            @include kasaFont();
+            a {
+                text-decoration: none;
+                color: $kasa_red;
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

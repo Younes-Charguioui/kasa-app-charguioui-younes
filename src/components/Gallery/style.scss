@@ -1,0 +1,12 @@
+$kasa_gray: rgba(246, 246, 246, 1);
+
+#gallery-container {
+    background-color: $kasa_gray;
+    width: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    box-sizing: border-box;
+    padding: 50px 80px;
+}
