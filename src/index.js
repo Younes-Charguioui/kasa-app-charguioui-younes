@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
-import Headers from './components/Headers'
-import Item from './components/Item'
 import About from './pages/About'
+import Location from './pages/Location'
+import Headers from './components/Headers'
 import Footer from './components/Footer'
 import Error from './components/Error'
 
@@ -15,9 +15,8 @@ ReactDOM.render(
     <Router>
       <Headers />
       <Routes>
-        <Route path="/" element={<Home />} >
-          <Route path=":location" element={<Item />}/>
-        </Route>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="location/:location" element={<Location />}/>
         <Route path="a-propos" element={<About/>} />
         <Route path="*" element={<Error />} />
       </Routes>

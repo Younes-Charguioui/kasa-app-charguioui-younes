@@ -5,7 +5,7 @@ import './style.scss'
 function Gallery() {
     return (
         <div id="gallery-container">
-            {data.map(({id, title, cover}) => <Item key='{id}' title={title} image={cover}/>  )}
+            {data.map(({id, title, cover}) => <Item key={id} id={id} title={title} image={cover}/>  )}
         </div>
     )
 }
