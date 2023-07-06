@@ -1,9 +1,10 @@
 import './style.scss'
 
-function Item() {
+function Item({key, title, image}) {
     return (
         <div id='item-container'>
-            <h2>Titre de la location</h2>
+            <img src={image} alt={`Interieur d'une location - ${key}`} />
+            <h2>{title}</h2>
         </div>
     )
 }

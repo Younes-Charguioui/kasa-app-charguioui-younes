@@ -1,20 +1,11 @@
 import Item from "../Item"
+import data from '../../data/logements.json';
 import './style.scss'
 
 function Gallery() {
     return (
         <div id="gallery-container">
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
-            <Item />
+            {data.map(({id, title, cover}) => <Item key='{id}' title={title} image={cover}/>  )}
         </div>
     )
 }
