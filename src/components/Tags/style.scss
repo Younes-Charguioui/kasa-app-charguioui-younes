@@ -1,0 +1,21 @@
+$kasa_red: rgba(255, 96, 96, 1);
+
+#tags-container {
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 115px;
+            padding: 5px 0px;
+            color: white;
+            background-color: $kasa_red;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+}

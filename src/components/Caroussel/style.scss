@@ -1,0 +1,29 @@
+#caroussel-container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    #caroussel-img {
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 25px;
+    }
+    #arrow-d {
+        position: absolute;
+        right: 2%;
+        top: 40%;
+    }
+    #arrow-g {
+        position: absolute;
+        left: 2%;
+        top: 40%;
+    }
+    #page-index {
+        position: absolute;
+        bottom: 5%;
+        right: 45%;
+        font-size: 18px;
+        color: white;
+    }
+}

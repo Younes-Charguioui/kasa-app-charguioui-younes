@@ -1,0 +1,19 @@
+#hote-container{
+    display: flex;
+    gap: 10px;
+    #hote-name {
+        display: flex;
+        flex-direction: column;
+        height: 64px;
+        justify-content: center;
+        gap: 7px;
+        font-size: 18px;
+        color: rgba(255, 96, 96, 1);
+
+    }
+    img{
+        width: 64px;
+        height: 64px;
+        border-radius: 32px;
+    }
+}
