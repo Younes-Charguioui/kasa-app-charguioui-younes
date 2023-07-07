@@ -4,22 +4,35 @@ import './style.scss'
 
 function Deroulant({type, data}) {
     const [typeDescription, typeEquipements] = [1,2];
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const openDeroulant = (e) => {
-        let element = e.target;
-        while(element.id != "deroulant-titre" ){
-            element = element.parentNode; 
+        let elementClick = e.target;
+        while(elementClick.id !== "deroulant-titre" ){
+            elementClick = elementClick.parentNode; 
         }
-        element = element.childNodes[0].childNodes[1];
-        element.classList.toggle('deroule');
+        const elementArrow = elementClick.childNodes[0].childNodes[1];
+        elementArrow.classList.toggle('deroule');
         setOpen(!open);
         setTimeout(() => {
-            element.classList.toggle('deroule');
-            element.classList.toggle('inverse');
-        }, 500);
-        let deroulantAnim = document.getElementById('deroulant-description');
-        deroulantAnim.classList.toggle('ouverture');
+            elementArrow.classList.toggle('deroule');
+            elementArrow.classList.toggle('inverse');
+        }, 300);
+        let deroulantAnim = document.getElementById('deroulant-contenu');
+        open ? deroulantAnim.style.height = '200px' : deroulantAnim.style.height = '50px'
     }
+    /*return (
+        <div id='deroulant-container'>
+            <div id='deroulant-titre' onClick={openDeroulant}>
+                <div>
+                    <span>Description</span>
+                    <img src={arrow} alt='fleche pour le menu déroulant' />
+                </div>            
+            </div>
+            <div id='deroulant-contenu'>
+                {<span>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </span>}
+            </div>
+        </div>
+    )*/
     return (
         <div id='deroulant-container'>
             <div id='deroulant-contenu'>
@@ -29,9 +42,7 @@ function Deroulant({type, data}) {
                         <img src={arrow} alt='fleche pour le menu déroulant' />
                     </div>            
                 </div>
-                {open && <div id='deroulant-description'>
-                    <span>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </span>
-                </div>}
+                <span>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </span>
             </div>
         </div>
     )
