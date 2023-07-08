@@ -5,17 +5,17 @@ import './style.scss'
 function Deroulant({title, data}) {
     const [open, setOpen] = useState(true);
 
-    
-    
     const openDeroulant = () => {
         const elementArrow = document.querySelector(`div[name='${title}-arrow']`)
+            .children[0]
+            .children[1];
         const elementContenu = document.querySelector(`div[name='${title}-contenu']`)
-        const affichageContenu = () => elementContenu.style.overflow = 'auto'
+        const affichageContenu = () => (elementContenu.style.overflow = 'auto')
         elementArrow.classList.toggle('arrow-rotation')
         setOpen(!open);
         if (open) {
             elementContenu.style.height = '230px'
-            setTimeout(affichageContenu, 1000)
+            setTimeout(affichageContenu, 750)
         } else {
             elementContenu.style.height = '50px'
             elementContenu.style.overflow = 'hidden'
