@@ -2,47 +2,42 @@ import { useState } from 'react';
 import arrow from '../../assets/arrow-deroulant.png'
 import './style.scss'
 
-function Deroulant({type, data}) {
-    const [typeDescription, typeEquipements] = [1,2];
+function Deroulant({title, data}) {
     const [open, setOpen] = useState(true);
-    const openDeroulant = (e) => {
-        let elementClick = e.target;
-        while(elementClick.id !== "deroulant-titre" ){
-            elementClick = elementClick.parentNode; 
-        }
-        const elementArrow = elementClick.childNodes[0].childNodes[1];
-        elementArrow.classList.toggle('deroule');
+
+    
+    
+    const openDeroulant = () => {
+        const elementArrow = document.querySelector(`div[name='${title}-arrow']`)
+        const elementContenu = document.querySelector(`div[name='${title}-contenu']`)
+        const affichageContenu = () => elementContenu.style.overflow = 'auto'
+        elementArrow.classList.toggle('arrow-rotation')
         setOpen(!open);
-        setTimeout(() => {
-            elementArrow.classList.toggle('deroule');
-            elementArrow.classList.toggle('inverse');
-        }, 300);
-        let deroulantAnim = document.getElementById('deroulant-contenu');
-        open ? deroulantAnim.style.height = '200px' : deroulantAnim.style.height = '50px'
+        if (open) {
+            elementContenu.style.height = '230px'
+            setTimeout(affichageContenu, 1000)
+        } else {
+            elementContenu.style.height = '50px'
+            elementContenu.style.overflow = 'hidden'
+        }
+
+        elementContenu.children[1].children[0].innerHTML = textDescription
     }
-    /*return (
-        <div id='deroulant-container'>
-            <div id='deroulant-titre' onClick={openDeroulant}>
-                <div>
-                    <span>Description</span>
-                    <img src={arrow} alt='fleche pour le menu déroulant' />
-                </div>            
-            </div>
-            <div id='deroulant-contenu'>
-                {<span>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </span>}
-            </div>
-        </div>
-    )*/
+
+    const textDescription = (title === 'Équipements') ? data.reduce((acc,val)=>`${acc}${val}<br />`,'') : data
+    
     return (
         <div id='deroulant-container'>
-            <div id='deroulant-contenu'>
-                <div id='deroulant-titre' onClick={openDeroulant}>
+            <div id='deroulant-contenu' name={`${title}-contenu`}>
+                <div id='deroulant-titre' name={`${title}-arrow`} onClick={openDeroulant}>
                     <div>
-                        <span>Description</span>
-                        <img src={arrow} alt='fleche pour le menu déroulant' />
+                        <span>{title}</span>
+                        <img id='deroulant-arrow' name='deroulant-arrow' src={arrow} alt='fleche pour le menu déroulant' />
                     </div>            
                 </div>
-                <span>Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants. Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 minutes à pied). </span>
+                <div id='deroulant-description'>
+                    <p>{}</p>
+                </div>
             </div>
         </div>
     )
