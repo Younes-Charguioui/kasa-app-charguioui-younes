@@ -4,6 +4,7 @@
 }
 
 #home-container {
+    min-height: calc(100vh - 209px - 127px);
     max-width: 1440px;
     margin: 0 auto;
 }
