@@ -27,3 +27,20 @@
         color: white;
     }
 }
+
+@media screen and (max-width: 570px) {
+    #caroussel-container {
+        #caroussel-img {
+            height: 255px;
+            border-radius: 10px;
+        }
+        #arrow-d {
+            top: 45%;
+            height: 30px;
+        }
+        #arrow-g {
+            top: 45%;
+            height: 30px;
+        }
+    }
+}

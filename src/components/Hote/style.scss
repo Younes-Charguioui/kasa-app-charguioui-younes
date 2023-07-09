@@ -17,3 +17,18 @@
         border-radius: 32px;
     }
 }
+
+@media screen and (max-width: 570px) {
+    #hote-container {
+        #hote-name {
+            font-size: 12px;
+            height: 32px;
+            gap: 3px;
+        }
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 16px;
+        }
+    }
+}

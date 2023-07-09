@@ -10,3 +10,18 @@ $kasa_gray: rgba(246, 246, 246, 1);
     box-sizing: border-box;
     padding: 50px 80px;
 }
+
+@media screen and (max-width: 1500px) {
+    #gallery-container {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    #gallery-container {
+        gap: 30px;
+        padding: 0px;
+        background-color: white;
+        margin-bottom: 20px;
+    }
+}

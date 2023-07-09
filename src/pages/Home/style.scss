@@ -7,4 +7,13 @@
     min-height: calc(100vh - 209px - 127px);
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0px 30px;
+}
+
+@media screen and (max-width: 400px) {
+    
+    #home-container {
+        margin: 0;
+        padding: 0px 15px;
+    }
 }

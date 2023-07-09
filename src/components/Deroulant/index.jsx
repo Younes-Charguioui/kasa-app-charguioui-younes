@@ -17,10 +17,10 @@ function Deroulant({title, data}) {
             elementContenu.style.height = '230px'
             setTimeout(affichageContenu, 750)
         } else {
-            elementContenu.style.height = '50px'
+            window.innerWidth < 571 ? elementContenu.style.height = '30px' : elementContenu.style.height = '50px'
             elementContenu.style.overflow = 'hidden'
         }
-
+        
         elementContenu.children[1].children[0].innerHTML = textDescription
     }
 

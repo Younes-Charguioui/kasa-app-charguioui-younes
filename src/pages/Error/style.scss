@@ -17,5 +17,23 @@
         color: rgba(255, 96, 96, 1);
         font-weight: 500;
         font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #error-container {
+        margin: 0px 20px;
+        min-height: calc(100vh - 209px - 75px);
+        h1 {
+            font-size: 96px;
+        }
+        h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            font-size: 14px;
+        }
     }
 }

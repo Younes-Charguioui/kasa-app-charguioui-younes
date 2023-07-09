@@ -28,3 +28,25 @@ $kasa_red: rgba(255, 96, 96, 1);
         gap: 100px;
     }
 }
+
+@media screen and (max-width: 570px) {
+    #block-full {
+        margin-bottom: 30px;
+        #block-1and2 {
+            flex-direction: column;
+            margin-bottom: 10px;
+            #block-1 {
+                margin-bottom: 20px;
+            }
+            #block-2 {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        #block-3 {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

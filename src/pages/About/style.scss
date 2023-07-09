@@ -11,3 +11,14 @@
         gap: 30px;
     }
 }
+
+@media screen and (max-width: 570px) {
+    #about-container {
+        min-height: calc(100vh - 209px - 75px);
+        margin: 0px 20px;
+        #block-container {
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+    }
+}

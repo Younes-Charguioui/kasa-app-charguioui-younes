@@ -4,13 +4,28 @@ footer {
     align-items: center;
     background-color: black;
     height: 209px;
-    .block-container {
+    #block-container {
         display: flex;
         flex-direction: column;
-        margin: auto 0;
+        margin-top: 70px;
         align-items: center;
+        gap: 40px;
+        p {
+            color: white;
+        }
     }
-    p {
-        color: white;
+    
+}
+
+@media screen and (max-width: 450px) {
+    footer {
+        #block-container {
+            gap: 20px;
+            p {
+                width: 122px;
+                font-size: 12px;
+                text-align: center;
+            }
+        }
     }
 }

@@ -6,7 +6,7 @@ import './style.scss'
 
 function Headers() {
     return (
-        <>
+        <div id='header-container'>
             <nav>
                 <img src={logo} alt="Logo de l'agence Kasa" />
                 <ul>
@@ -18,7 +18,7 @@ function Headers() {
                     </li>
                 </ul>
             </nav>
-        </>
+        </div>
     )
 }
 

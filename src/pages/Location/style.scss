@@ -3,3 +3,9 @@
     margin: 0 auto;
     min-height: calc(100vh - 209px - 127px);
 }
+
+@media screen and (max-width: 1480px) {
+    #location-container {
+        margin: 0px 20px;
+    }
+}

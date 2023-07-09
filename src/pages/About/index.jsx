@@ -1,4 +1,4 @@
-import Banner from '../../components/Banner'
+import BannerNoText from '../../components/BannerNoText'
 import Deroulant from '../../components/Deroulant'
 
 import image02 from '../../assets/image02.png'
@@ -7,7 +7,7 @@ import './style.scss'
 function About() {
     return (
         <div id='about-container'>
-            <Banner image={image02} text=''/>
+            <BannerNoText image={image02}/>
             <div id='block-container'>
                 <Deroulant 
                     title="Flabilité" 

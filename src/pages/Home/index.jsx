@@ -6,12 +6,10 @@ import './style.scss'
 
 function Home() {
   return (
-      <>
-        <div id='home-container'>
-          <Banner image={image01} text="Chez vous, partout et ailleurs"/>
-          <Gallery />
-        </div>
-      </>
+      <div id='home-container'>
+        <Banner image={image01} text="Chez vous, partout et ailleurs"/>
+        <Gallery />
+      </div>
     )
 }
 

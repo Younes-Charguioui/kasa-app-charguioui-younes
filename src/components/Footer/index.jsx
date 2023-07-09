@@ -4,7 +4,7 @@ import logo from '../../assets/logo-footer.png'
 function Footer(){
     return (
         <footer>
-            <div className='block-container'>
+            <div id='block-container'>
                 <img src={logo} alt="logo de l'agence Kasa" />
                 <p>© 2020 Kasa. All rights reserved</p>
             </div>

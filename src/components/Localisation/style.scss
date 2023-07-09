@@ -1,6 +1,7 @@
 $kasa_red: rgba(255, 96, 96, 1);
 
 #localisation-container {
+    font-weight: 500;
     h2 {
         color: $kasa_red;
         font-size: 36px;
@@ -8,5 +9,16 @@ $kasa_red: rgba(255, 96, 96, 1);
     h3 {
         color: $kasa_red;
         font-size: 18px;
+    }
+}
+@media screen and (max-width: 570px) {
+    #localisation-container {
+        h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 14px;
+        }
     }
 }
