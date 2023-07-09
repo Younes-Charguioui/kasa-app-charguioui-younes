@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kasa-app-charguioui-younes/static/css/main.ff944a92.css",
+    "main.js": "/kasa-app-charguioui-younes/static/js/main.4f0f2577.js",
+    "static/media/image02.png": "/kasa-app-charguioui-younes/static/media/image02.640955dab8c7bff25514.png",
+    "static/media/image01.png": "/kasa-app-charguioui-younes/static/media/image01.19221376a0aa2549c135.png",
+    "index.html": "/kasa-app-charguioui-younes/index.html",
+    "main.ff944a92.css.map": "/kasa-app-charguioui-younes/static/css/main.ff944a92.css.map",
+    "main.4f0f2577.js.map": "/kasa-app-charguioui-younes/static/js/main.4f0f2577.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff944a92.css",
+    "static/js/main.4f0f2577.js"
+  ]
+}
