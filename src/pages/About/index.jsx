@@ -10,7 +10,7 @@ function About() {
             <BannerNoText image={image02}/>
             <div id='block-container'>
                 <Deroulant 
-                    title="Flabilité" 
+                    title="Fiabilité" 
                     data="Les annonces postées sur Kasa garantissent une fiabilité totale. 
                     Les photos sont conformes aux logements, et tous les informations 
                     sont régulièrement vérifiées par nos équipes."
