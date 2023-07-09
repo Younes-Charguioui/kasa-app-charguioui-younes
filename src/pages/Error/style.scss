@@ -1,0 +1,21 @@
+#error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 100px;
+    color: rgba(255, 96, 96, 1);
+    h1 {
+        font-weight: 700;
+        font-size: 288px;
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 36px;
+    }
+    a {
+        color: rgba(255, 96, 96, 1);
+        font-weight: 500;
+        font-size: 18px;
+    }
+}

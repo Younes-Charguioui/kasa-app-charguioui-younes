@@ -1,12 +1,10 @@
-import image from '../../assets/image01.png'
-
 import './style.scss'
 
-function Banner() {
+function Banner({image, text}) {
     return (
         <div id='banner-container'>
-            <img src={image} alt="Image représentant une falaise" />
-            <h2>Chez vous, partout et ailleurs</h2>
+            <img src={image} alt="contenu de la banière" />
+            {text.length > 0 && <h2>{text}</h2>}
         </div>
     )
 }

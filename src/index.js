@@ -6,7 +6,7 @@ import About from './pages/About'
 import Location from './pages/Location'
 import Headers from './components/Headers'
 import Footer from './components/Footer'
-import Error from './components/Error'
+import Error from './pages/Error'
 
 import './style.scss'
 
