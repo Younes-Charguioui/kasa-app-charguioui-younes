@@ -1,7 +1,7 @@
 import './style.scss'
 
 function Tags({tags}) {
-    const tagsList = tags.map(item => <li>{item}</li>)
+    const tagsList = tags.map(item => <li key={`tag-${item}`}>{item}</li>)
     return (
         <div id='tags-container'>
             <ul>

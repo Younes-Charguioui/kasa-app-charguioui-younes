@@ -4,7 +4,7 @@
     align-items: center;
     gap: 100px;
     color: rgba(255, 96, 96, 1);
-    min-height: calc(100vh - 209px - 127px);
+    min-height: calc(100vh - 209px - 128px);
     h1 {
         font-weight: 700;
         font-size: 288px;
@@ -24,7 +24,7 @@
 @media screen and (max-width: 570px) {
     #error-container {
         margin: 0px 20px;
-        min-height: calc(100vh - 209px - 75px);
+        min-height: calc(100vh - 209px - 106.734px);
         h1 {
             font-size: 96px;
         }

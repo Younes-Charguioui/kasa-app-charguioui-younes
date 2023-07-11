@@ -27,9 +27,10 @@ $kasa_red: rgba(255, 96, 96, 1);
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 570px) {
     #header-container {
         nav {
+            padding: 25px 20px;
             img {
                 width: 145px;
             }
@@ -39,30 +40,6 @@ $kasa_red: rgba(255, 96, 96, 1);
                     font-size: 12px;
                     text-transform: uppercase;  
                 }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 390px) {
-    #header-container {
-        nav {
-            img {
-                width: 100px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 340px) {
-    #header-container {
-        nav {
-            padding: 25px 15px;
-            img {
-                width: 80px;
-            }
-            ul {
-                gap: 15px;
             }
         }
     }

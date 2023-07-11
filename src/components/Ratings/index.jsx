@@ -6,9 +6,9 @@ import './style.scss'
 function Ratings({rating}) {
     const stars = [1,2,3,4,5];
     const starList = stars.map((i) => (i <= rating) ? (
-        <li><img src={starFull} alt={`note n°${i}`}/></li>
+        <li key={`star-${i}`}><img src={starFull} alt={`note n°${i}`}/></li>
     ) : (
-        <li><img src={starEmpty} alt={`note n°${i}`}/></li>
+        <li key={`star-${i}`}><img src={starEmpty} alt={`note n°${i}`}/></li>
     ));
     return (
         <div id='ratings-container'>
